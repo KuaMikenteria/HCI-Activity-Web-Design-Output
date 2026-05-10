@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Kim Ruzzel L. Enteria | Contemporary Art Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- LAYER 1: Background images (fixed) -->
+    <div class="bg-images">
+      <img
+        class="bg-img top-img"
+        src="images/image_top.png"
+        alt="Background top"
+      />
+      <img
+        class="bg-img middle-img"
+        src="images/image_middle.png"
+        alt="Background middle"
+      />
+      <img
+        class="bg-img bottom-img"
+        src="images/image_bottom.png"
+        alt="Background bottom"
+      />
+    </div>
+
+    <!-- LAYER 2: Dynamic color overlay (semi-transparent, changes with scroll) -->
+    <div class="color-overlay" id="colorOverlay"></div>
+
+    <!-- LAYER 3: Content -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">✧ KIM RUZZEL L. ENTERIA</div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about-work">About</a>
+          <a href="#styles">Styles</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section id="home" class="hero fade-up">
+        <img
+          class="profile-pic"
+          src="images/profile_pic.png"
+          alt="Profile picture of artist"
+          loading="lazy"
+          onerror="
+            this.src = 'https://placehold.co/150x150?text=Artist';
+            this.onerror = null;
+          "
+        />
+        <h1>Kim Ruzzel L. Enteria</h1>
+        <div class="hero-tagline">
+          Creating contemporary art that explores the intersection of light,
+          shadow, and form. My work focuses on minimalist aesthetics and the
+          beauty found in simplicity.
+        </div>
+        <p
+          class="subhead"
+          style="margin-top: 1.5rem; margin-left: auto; margin-right: auto"
+        >
+          With over a decade of experience in visual arts, I combine traditional
+          techniques with modern perspectives to create pieces that resonate
+          with viewers on a deeper level.
+        </p>
+        <div class="signature">— light, form, silence —</div>
+      </section>
+
+      <section id="about-work">
+        <h2>About My Work</h2>
+        <div class="about-grid">
+          <div class="about-card fade-up">
+            <img
+              class="card-img clickable-img"
+              src="images/philosophy.png"
+              alt="Philosophy illustration"
+              loading="lazy"
+              onerror="
+                this.src = 'https://placehold.co/120x120?text=Philosophy';
+                this.onerror = null;
+              "
+            />
+            <h3>Philosophy</h3>
+            <p>
+              Art is about finding extraordinary moments in ordinary things. I
+              believe in stripping away the unnecessary to reveal the essential
+              truth beneath. Each piece is a meditation on form and space,
+              inviting viewers to slow down and observe the subtle details that
+              often go unnoticed.
+            </p>
+          </div>
+          <div class="about-card fade-up">
+            <img
+              class="card-img clickable-img"
+              src="images/process.png"
+              alt="Process sketch"
+              loading="lazy"
+              onerror="
+                this.src = 'https://placehold.co/120x120?text=Process';
+                this.onerror = null;
+              "
+            />
+            <h3>Process</h3>
+            <p>
+              My creative process begins with observation and contemplation. I
+              spend time studying light patterns, geometric forms, and natural
+              compositions. Using a combination of traditional and digital
+              media, I refine each concept until it achieves the perfect balance
+              between simplicity and depth.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="styles">
+        <h2>About My Styles</h2>
+        <div class="styles-grid">
+          <div class="style-card fade-up">
+            <img
+              class="card-img clickable-img"
+              src="images/traditional.png"
+              alt="Traditional illustration"
+              loading="lazy"
+              onerror="
+                this.src = 'https://placehold.co/100x100?text=Traditional';
+                this.onerror = null;
+              "
+            />
+            <h3>✧ Traditional Illustration</h3>
+            <p>
+              Classic pencil, ink ballpoint, and charcoal techniques that
+              capture raw emotion and authentic expressions. This style
+              emphasizes fine detail, subtle shading, and the organic quality of
+              hand-drawn artwork.
+            </p>
+          </div>
+          <div class="style-card fade-up">
+            <img
+              class="card-img clickable-img"
+              src="images/digital.jpg"
+              alt="Digital illustration"
+              loading="lazy"
+              onerror="
+                this.src = 'https://placehold.co/100x100?text=Digital';
+                this.onerror = null;
+              "
+            />
+            <h3>✦ Digital Illustration</h3>
+            <p>
+              Vibrant, contemporary digital artwork that combines bold colors
+              with sharp graphic elements. This approach allows for unlimited
+              experimentation with color palettes and effects, creating
+              eye-catching pieces.
+            </p>
+          </div>
+          <div class="style-card fade-up">
+            <img
+              class="card-img clickable-img"
+              src="images/abstract.png"
+              alt="Abstract illustration"
+              loading="lazy"
+              onerror="
+                this.src = 'https://placehold.co/100x100?text=Abstract';
+                this.onerror = null;
+              "
+            />
+            <h3>⬖ Abstract Illustration</h3>
+            <p>
+              Expressive, stylized interpretations that push beyond realistic
+              representation. This style uses bold colors, dynamic shapes, and
+              unconventional perspectives to convey emotion and energy.
+            </p>
+          </div>
+          <div class="style-card fade-up">
+            <img
+              class="card-img clickable-img"
+              src="images/political.png"
+              alt="Editorial illustration"
+              loading="lazy"
+              onerror="
+                this.src = 'https://placehold.co/100x100?text=Editorial';
+                this.onerror = null;
+              "
+            />
+            <h3>◍ Editorial Illustration</h3>
+            <p>
+              Editorial and narrative-driven artwork that tells stories and
+              communicates ideas. Inspired by comic book aesthetics and
+              journalistic illustration, this style combines clear visual
+              storytelling with impactful imagery.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-card fade-up">
+            <img
+              class="gallery-img clickable-img"
+              src="images/media_transition.png"
+              alt="Media Transition"
+              loading="lazy"
+              onerror="
+                this.src = 'https://placehold.co/700x500?text=Media+Transition';
+                this.onerror = null;
+              "
+            />
+            <div class="gallery-info">
+              <h3>Media Transition</h3>
+              <p>
+                From traditional to digital format. A hybrid ritual between
+                analog soul and digital precision.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-card fade-up">
+            <img
+              class="gallery-img clickable-img"
+              src="images/layer_trail.png"
+              alt="Layer Trail"
+              loading="lazy"
+              onerror="
+                this.src = 'https://placehold.co/700x500?text=Layer+Trail';
+                this.onerror = null;
+              "
+            />
+            <div class="gallery-info">
+              <h3>Layer Trail</h3>
+              <p>
+                Tracing from original scene to well-detailed object. Layered
+                textures and delicate marks preserve each stroke.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-card fade-up">
+            <img
+              class="gallery-img clickable-img"
+              src="images/your_oc.png"
+              alt="Your OC"
+              loading="lazy"
+              onerror="
+                this.src = 'https://placehold.co/700x500?text=Your+OC';
+                this.onerror = null;
+              "
+            />
+            <div class="gallery-info">
+              <h3>Your OC</h3>
+              <p>
+                Making your imagination come to life based on your biases and
+                pleasing personality characters.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-card fade-up">
+            <img
+              class="gallery-img clickable-img"
+              src="images/upuan.png"
+              alt="Upuan"
+              loading="lazy"
+              onerror="
+                this.src = 'https://placehold.co/700x500?text=Upuan';
+                this.onerror = null;
+              "
+            />
+            <div class="gallery-info">
+              <h3>Upuan</h3>
+              <p>
+                Visual poetry capturing socio-cultural dialogues. Inspired by
+                narrative and everyday symbolism.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="center-figures fade-up">
+        <img
+          class="center-figure"
+          src="images/white1.png"
+          alt="Artwork 1"
+          loading="lazy"
+          onerror="this.style.display = 'none'"
+        />
+        <img
+          class="center-figure"
+          src="images/white2.png"
+          alt="Artwork 2"
+          loading="lazy"
+          onerror="this.style.display = 'none'"
+        />
+        <img
+          class="center-figure"
+          src="images/white3.png"
+          alt="Artwork 3"
+          loading="lazy"
+          onerror="this.style.display = 'none'"
+        />
+      </div>
+
+      <footer id="contact" class="footer fade-up">
+        <div class="descriptions">
+          <h2>Get In Touch</h2>
+          <p>
+            I'm always interested in collaborating on new projects or discussing
+            creative ideas. Feel free to reach out through any of the platforms
+            below.
+          </p>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Email" target="_blank"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="#" class="social-icon" aria-label="GitHub" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="#" class="social-icon" aria-label="Instagram" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <div class="copyright">
+          <p>✧ Kim Ruzzel L. Enteria ✧ — studio for minimalist expression —</p>
+          <p style="margin-top: 0.8rem">
+            © 2026 | All rights reserved. Designed and developed by Kim Ruzzel
+            L. Enteria.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="imageModal" class="modal">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div id="modalCaption"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
